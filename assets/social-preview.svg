@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="378" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+  <title id="title">GateFormer research paper</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e32"/><stop offset="1" stop-color="#163d4c"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g fill="none" stroke="#7dbebf" stroke-opacity=".15"><circle cx="1100" cy="220" r="280"/><circle cx="1100" cy="220" r="220"/><circle cx="1100" cy="220" r="160"/></g>
+  <circle cx="1075" cy="167" r="48" fill="#edc16f"/>
+  <path d="M866 365C925 365 940 299 987 312S1047 395 1090 348 1160 290 1200 311" fill="none" stroke="#68c7bb" stroke-width="5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="81" font-size="17" letter-spacing="3" fill="#b8d0da">SOLAR FORECASTING · ENERGY AND AI · 2026</text>
+    <text x="58" y="234" font-size="112" font-weight="700" letter-spacing="-4" fill="#fff">GateFormer</text>
+    <text x="64" y="314" font-size="32" fill="#d8e7ed">Forecast-space decomposition for</text>
+    <text x="64" y="360" font-size="32" fill="#d8e7ed">intra-hour solar irradiance prediction</text>
+    <text x="64" y="406" font-size="32" fill="#d8e7ed">from sky images</text>
+    <path d="M64 462H1136" stroke="#668895" stroke-opacity=".4"/>
+    <text x="64" y="513" font-size="20" fill="#d8e7ed">David Hamlyn · Sunny Chaudhary · Jonathon Hare · Tasmiat Rahman</text>
+    <text x="64" y="555" font-size="18" fill="#9cb9c6">UNIVERSITY OF SOUTHAMPTON</text>
+  </g>
+</svg>

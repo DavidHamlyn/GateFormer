@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the GateFormer paper when referring to this work."
 title: "GateFormer"
 type: software
+repository-code: "https://github.com/DavidHamlyn/GateFormer"
+url: "https://davidhamlyn.github.io/GateFormer/"
 authors:
   - family-names: Hamlyn
     given-names: David

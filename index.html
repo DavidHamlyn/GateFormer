@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GateFormer — Solar Irradiance Forecasting from Sky Images</title>
+  <meta name="description" content="GateFormer combines sky imagery and irradiance history through forecast-space decomposition. Read the Energy and AI paper, explore the method and results, and cite the research.">
+  <link rel="canonical" href="https://davidhamlyn.github.io/GateFormer/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GateFormer | Sky-image solar forecasting">
+  <meta property="og:description" content="Forecast-space decomposition for intra-hour solar irradiance prediction. Energy and AI, 2026. Paper, method, results and citation. Code coming soon.">
+  <meta property="og:url" content="https://davidhamlyn.github.io/GateFormer/">
+  <meta property="og:image" content="https://davidhamlyn.github.io/GateFormer/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GateFormer — Forecast-space decomposition for intra-hour solar irradiance prediction from sky images">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="GateFormer: Forecast-space decomposition for intra-hour solar irradiance prediction from sky images">
+  <meta name="citation_author" content="David Hamlyn">
+  <meta name="citation_author" content="Sunny Chaudhary">
+  <meta name="citation_author" content="Jonathon Hare">
+  <meta name="citation_author" content="Tasmiat Rahman">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_journal_title" content="Energy and AI">
+  <meta name="citation_volume" content="26">
+  <meta name="citation_firstpage" content="100917">
+  <meta name="citation_doi" content="10.1016/j.egyai.2026.100917">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"GateFormer: Forecast-space decomposition for intra-hour solar irradiance prediction from sky images","name":"GateFormer: Forecast-space decomposition for intra-hour solar irradiance prediction from sky images","author":[{"@type":"Person","name":"David Hamlyn","url":"https://github.com/DavidHamlyn"},{"@type":"Person","name":"Sunny Chaudhary"},{"@type":"Person","name":"Jonathon Hare"},{"@type":"Person","name":"Tasmiat Rahman"}],"isPartOf":{"@type":"PublicationVolume","volumeNumber":"26","isPartOf":{"@type":"Periodical","name":"Energy and AI"}},"identifier":"https://doi.org/10.1016/j.egyai.2026.100917","sameAs":"https://doi.org/10.1016/j.egyai.2026.100917","url":"https://davidhamlyn.github.io/GateFormer/","image":"https://davidhamlyn.github.io/GateFormer/assets/social-preview.png","keywords":["solar irradiance forecasting","vision transformer","sky images","multimodal learning","solar energy","forecast-space decomposition"]}
+  </script>
+  <style>
+    :root{color-scheme:light;--ink:#153449;--muted:#526b7c;--line:#dce5eb;--teal:#216d65;--paper:#f7f9fb}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--teal);text-underline-offset:4px}a:hover{color:#104c46}a:focus-visible,button:focus-visible{outline:3px solid #c88f2b;outline-offset:5px}
+    .wrap{max-width:1080px;margin:auto;padding:0 32px}nav{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:25px 0;font-size:14px}nav a{text-decoration:none;font-weight:650}nav .links{display:flex;gap:24px}.brand{letter-spacing:-.5px;font-size:20px;color:var(--ink)}
+    .hero{background:#fff;padding:42px 0 58px;border-bottom:1px solid var(--line)}.banner{display:block;width:100%;height:auto;border-radius:16px}.eyebrow{margin:36px 0 12px;color:var(--teal);font-size:12px;font-weight:750;letter-spacing:2px;text-transform:uppercase}h1{max-width:950px;margin:0 0 20px;font-size:clamp(29px,4.3vw,49px);line-height:1.18;letter-spacing:-1.5px;font-weight:650}.authors{margin-bottom:4px;color:var(--muted)}.affiliation{font-size:14px;color:var(--muted);margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:11px 19px;border:1px solid #bacbd5;border-radius:7px;color:var(--ink);background:#fff;text-decoration:none;font:600 14px/1.5 inherit}.primary{background:var(--ink);color:#fff;border-color:var(--ink)}.primary:hover{background:#24556c;color:#fff}.status{display:inline-flex;align-items:center;font-size:13px;color:var(--muted);gap:8px;padding:12px}.dot{width:7px;height:7px;background:#c49238;border-radius:50%}
+    main section{padding:50px 0;border-bottom:1px solid var(--line)}h2{font-size:27px;line-height:1.3;letter-spacing:-.7px;margin:0 0 18px}p{margin:0 0 16px}.lede{max-width:850px;font-size:19px;color:var(--muted)}figure{margin:28px 0 0}figure img{display:block;width:100%;height:auto}figcaption{font-size:12px;color:var(--muted);margin-top:12px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:28px 0}.metric strong{display:block;font-size:38px;line-height:1.2;letter-spacing:-1px}.metric span{display:block;color:var(--muted);font-size:14px;margin-top:12px}.note{font-size:14px;color:var(--muted)}.cite-head{display:flex;justify-content:space-between;align-items:center;gap:16px}.copy{border:1px solid #bacbd5;border-radius:6px;background:#fff;color:var(--ink);font:600 13px inherit;padding:9px 14px;cursor:pointer}pre{overflow:auto;padding:24px;background:#122b3a;color:#e1edf2;border-radius:10px;font:13px/1.8 ui-monospace,SFMono-Regular,Consolas,monospace;tab-size:2}footer{padding:30px 0 45px;color:var(--muted);font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:20px}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:650px){.wrap{padding:0 20px}nav{padding:20px 0}nav .links{gap:15px}.hero{padding:20px 0 36px}.eyebrow{margin-top:25px}h1{letter-spacing:-.8px}.authors{font-size:15px}.metrics{grid-template-columns:1fr;gap:22px}.metric{padding-bottom:20px;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.metric strong{font-size:34px}main section{padding:35px 0}.lede{font-size:17px}footer .wrap{display:block}footer a{display:block;margin-top:10px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main" onfocus="this.classList.remove('sr-only')">Skip to content</a>
+  <div class="wrap"><nav aria-label="Main navigation"><a class="brand" href="./">GateFormer</a><div class="links"><a href="#method">Method</a><a href="#results">Results</a><a href="#citation">Cite</a></div></nav></div>
+  <header class="hero"><div class="wrap">
+    <img class="banner" src="assets/gateformer-banner.svg" width="1280" height="400" alt="GateFormer, solar forecasting research published in Energy and AI, 2026">
+    <p class="eyebrow">Research paper · Energy and AI · 2026</p>
+    <h1>Forecast-space decomposition for intra-hour solar irradiance prediction from sky images</h1>
+    <p class="authors"><a href="https://github.com/DavidHamlyn">David Hamlyn</a> · Sunny Chaudhary · Jonathon Hare · Tasmiat Rahman</p>
+    <p class="affiliation">University of Southampton</p>
+    <div class="actions"><a class="button primary" href="https://doi.org/10.1016/j.egyai.2026.100917">Read the paper <span aria-hidden="true">↗</span></a><a class="button" href="https://github.com/DavidHamlyn/GateFormer">GitHub repository <span aria-hidden="true">↗</span></a><a class="button" href="#citation">Cite this work</a><span class="status"><span class="dot" aria-hidden="true"></span>Code coming soon</span></div>
+  </div></header>
+  <main class="wrap" id="main">
+    <section id="method"><h2>Complementary forecasts, one shared model.</h2><p class="lede">GateFormer forecasts global horizontal irradiance (GHI) from sky imagery and recent irradiance measurements. A shared, GHI-conditioned Vision Transformer feeds two complementary predictors: one forecasts the future trajectory, while the other predicts change at the final horizon. A learned gate blends their forecasts, followed by a residual correction.</p><figure><img src="assets/gateformer-overview.svg" width="1200" height="440" alt="Sky images and measured GHI feed a shared ViT, followed by trajectory and delta heads, adaptive blending, and residual correction to produce the final forecast." loading="lazy"><figcaption>Conceptual overview. See the paper for the full architecture and conditioning inputs.</figcaption></figure></section>
+    <section id="results"><h2>Results at a glance</h2><div class="metrics"><div class="metric"><strong>125.01 <small style="font-size:18px">W/m²</small></strong><span>RMSE · NREL-TSI · +30 minutes</span></div><div class="metric"><strong>9.6% lower</strong><span>RMSE versus SIAT<br>Paired-timestamp evaluation</span></div><div class="metric"><strong>22.97–28.86%</strong><span>Forecast skill over smart persistence<br>Across three sites</span></div></div><p class="note">Evaluated on NREL-TSI, Chilbolton, and SIRTA. Figures are from the <a href="https://doi.org/10.1016/j.egyai.2026.100917">published paper</a>; comparisons follow its evaluation protocol.</p></section>
+    <section id="code"><h2>Follow the code release</h2><p class="lede">This is the paper’s project page. The implementation will be added to the GitHub repository in a future update.</p><p><a href="https://github.com/DavidHamlyn/GateFormer">Bookmark or star the repository</a>, or choose <strong>Watch → Custom → Releases</strong> on GitHub to follow future releases.</p></section>
+    <section id="citation"><div class="cite-head"><h2>Cite this work</h2><button class="copy" id="copy" type="button" hidden>Copy BibTeX</button></div><p>If this work is useful to your research, please cite the paper.</p><pre><code id="bibtex">@article{hamlyn2026gateformer,
+  title   = {{GateFormer}: Forecast-space decomposition for intra-hour solar irradiance prediction from sky images},
+  author  = {Hamlyn, David and Chaudhary, Sunny and Hare, Jonathon and Rahman, Tasmiat},
+  journal = {Energy and AI},
+  volume  = {26},
+  pages   = {100917},
+  year    = {2026},
+  doi     = {10.1016/j.egyai.2026.100917},
+  url     = {https://doi.org/10.1016/j.egyai.2026.100917}
+}</code></pre><p class="note"><a href="citation.bib" download>Download BibTeX</a> · <a href="https://doi.org/10.1016/j.egyai.2026.100917">View publication</a></p><p id="copy-status" class="note" role="status"></p></section>
+    <section><h2>Related research</h2><p><a href="https://github.com/DavidHamlyn/solar-irradiance-vision-transformer">Vision Transformers for Estimating Irradiance Using Data-Scarce Sky Images</a><br><span class="note">Our earlier work on solar irradiance estimation · Energy and AI, 2025</span></p></section>
+  </main>
+  <footer><div class="wrap"><span>GateFormer · University of Southampton</span><a href="https://github.com/DavidHamlyn/GateFormer">Project repository ↗</a></div></footer>
+  <script>
+    const button = document.getElementById('copy');
+    if (navigator.clipboard && window.isSecureContext) {
+      button.hidden = false;
+      button.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(document.getElementById('bibtex').textContent.trim() + '\n');
+          document.getElementById('copy-status').textContent = 'BibTeX copied.';
+        } catch {
+          document.getElementById('copy-status').textContent = 'Please select the citation above to copy it, or download the BibTeX file.';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

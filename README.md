@@ -17,6 +17,8 @@
 <p align="center">
   <a href="https://doi.org/10.1016/j.egyai.2026.100917"><strong>Read the paper ↗</strong></a>
   &nbsp;·&nbsp;
+  <a href="https://davidhamlyn.github.io/GateFormer/">Project page</a>
+  &nbsp;·&nbsp;
   <a href="#citation">Citation</a>
   &nbsp;·&nbsp;
   <a href="#code-release">Code release</a>
