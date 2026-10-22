@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+  <title id="title">GateFormer</title>
+  <desc id="desc">Forecast-space decomposition for solar irradiance forecasting. Abstract sky and solar motif.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e32"/><stop offset="1" stop-color="#163d4c"/></linearGradient>
+    <radialGradient id="sun"><stop stop-color="#ffe9ac"/><stop offset="1" stop-color="#eebc61"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#95bdc5" stroke-opacity=".08"/></pattern>
+    <clipPath id="clip"><rect width="1280" height="400" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1280" height="400" fill="url(#bg)"/>
+    <rect width="1280" height="400" fill="url(#grid)"/>
+    <g fill="none" stroke="#96c6ca" stroke-opacity=".16">
+      <circle cx="1060" cy="196" r="218"/><circle cx="1060" cy="196" r="168"/><circle cx="1060" cy="196" r="118"/>
+    </g>
+    <circle cx="1060" cy="168" r="50" fill="url(#sun)"/>
+    <path d="M820 280C880 280 885 235 930 235S980 308 1025 272 1070 212 1120 246 1200 260 1280 214" fill="none" stroke="#64c9bf" stroke-width="4"/>
+    <path d="M820 295C880 295 905 276 950 276S1012 254 1060 265 1160 229 1280 246" fill="none" stroke="#efc578" stroke-width="3" stroke-dasharray="8 8"/>
+    <rect x="64" y="63" width="36" height="4" rx="2" fill="#efc578"/>
+    <text x="114" y="72" fill="#b6ccd5" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">SOLAR FORECASTING</text>
+    <text x="60" y="192" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700" letter-spacing="-3">GateFormer</text>
+    <text x="65" y="242" fill="#d3e3e9" font-family="Arial, Helvetica, sans-serif" font-size="25">Forecast-space decomposition</text>
+    <text x="65" y="279" fill="#d3e3e9" font-family="Arial, Helvetica, sans-serif" font-size="25">for intra-hour solar irradiance prediction</text>
+    <text x="65" y="348" fill="#94b4c1" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="1">ENERGY AND AI   /   2026</text>
+  </g>
+</svg>

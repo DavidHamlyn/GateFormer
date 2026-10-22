@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the GateFormer paper when referring to this work."
+title: "GateFormer"
+type: software
+authors:
+  - family-names: Hamlyn
+    given-names: David
+  - family-names: Chaudhary
+    given-names: Sunny
+  - family-names: Hare
+    given-names: Jonathon
+  - family-names: Rahman
+    given-names: Tasmiat
+preferred-citation:
+  type: article
+  title: "GateFormer: Forecast-space decomposition for intra-hour solar irradiance prediction from sky images"
+  authors:
+    - family-names: Hamlyn
+      given-names: David
+    - family-names: Chaudhary
+      given-names: Sunny
+    - family-names: Hare
+      given-names: Jonathon
+    - family-names: Rahman
+      given-names: Tasmiat
+  journal: "Energy and AI"
+  volume: "26"
+  start: "100917"
+  year: 2026
+  doi: "10.1016/j.egyai.2026.100917"
+  url: "https://doi.org/10.1016/j.egyai.2026.100917"

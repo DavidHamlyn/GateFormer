@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">GateFormer conceptual overview</title>
+  <desc id="desc">Sky images and measured GHI feed a shared Vision Transformer. Trajectory and delta forecasts are combined by an adaptive blend. Residual correction refines the final forecast. Conditioning inputs are omitted for clarity.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8094a2"/></marker>
+  </defs>
+  <rect x="1" y="1" width="1198" height="438" rx="18" fill="#f6f9fb" stroke="#dce5eb"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="40" y="49" font-size="15" font-weight="700" letter-spacing="2" fill="#5e7484">ONE REPRESENTATION. COMPLEMENTARY FORECASTS.</text>
+    <g fill="none" stroke="#8094a2" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M210 197H260"/>
+      <path d="M440 197H473V139H510"/><path d="M473 197V255H510"/>
+      <path d="M700 139H738V197H778"/><path d="M700 255H738V197"/>
+      <path d="M948 197H990"/>
+      <path d="M1075 247V302"/>
+    </g>
+    <rect x="40" y="147" width="170" height="100" rx="12" fill="#ffffff" stroke="#d5e1e7"/>
+    <text x="125" y="186" text-anchor="middle" font-size="19" font-weight="700" fill="#18364b">Sky images</text>
+    <text x="125" y="216" text-anchor="middle" font-size="17" fill="#557184">+ measured GHI</text>
+    <rect x="260" y="137" width="180" height="120" rx="12" fill="#193c50"/>
+    <text x="350" y="176" text-anchor="middle" font-size="15" fill="#b8d6e0">GHI-CONDITIONED</text>
+    <text x="350" y="206" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">Shared ViT</text>
+    <text x="350" y="234" text-anchor="middle" font-size="16" fill="#d0e1e8">encoder</text>
+    <rect x="510" y="96" width="190" height="86" rx="12" fill="#e4f3f0" stroke="#a6d2c8"/>
+    <text x="605" y="132" text-anchor="middle" font-size="19" font-weight="700" fill="#215b55">Trajectory head</text>
+    <text x="605" y="159" text-anchor="middle" font-size="16" fill="#42766d">Future GHI sequence</text>
+    <rect x="510" y="212" width="190" height="86" rx="12" fill="#fff2d8" stroke="#e4cb94"/>
+    <text x="605" y="248" text-anchor="middle" font-size="19" font-weight="700" fill="#73581f">Delta head</text>
+    <text x="605" y="275" text-anchor="middle" font-size="16" fill="#7d693d">Final-horizon change</text>
+    <rect x="778" y="147" width="170" height="100" rx="12" fill="#ffffff" stroke="#b9ccd8"/>
+    <text x="863" y="186" text-anchor="middle" font-size="19" font-weight="700" fill="#18364b">Adaptive blend</text>
+    <text x="863" y="216" text-anchor="middle" font-size="16" fill="#557184">Base forecast</text>
+    <rect x="990" y="147" width="170" height="100" rx="12" fill="#ffffff" stroke="#b9ccd8"/>
+    <text x="1075" y="186" text-anchor="middle" font-size="19" font-weight="700" fill="#18364b">Residual</text>
+    <text x="1075" y="216" text-anchor="middle" font-size="18" fill="#557184">correction</text>
+    <rect x="990" y="304" width="170" height="50" rx="25" fill="#193c50"/>
+    <text x="1075" y="335" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Final forecast</text>
+    <text x="40" y="395" font-size="15" fill="#6a7e8c">Simplified flow · Both heads produce a final-horizon forecast for blending.</text>
+  </g>
+</svg>
