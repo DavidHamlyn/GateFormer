@@ -80,3 +80,10 @@ Download the [BibTeX entry](citation.bib), or use GitHub’s **Cite this reposit
 ## Related research
 
 [Vision Transformers for Estimating Irradiance Using Data-Scarce Sky Images](https://github.com/DavidHamlyn/solar-irradiance-vision-transformer) — our earlier work on solar irradiance estimation, published in *Energy and AI* (2025).
+
+## Open paper and author website
+
+- [Read the paper on arXiv](https://arxiv.org/abs/2610.30942)
+- [Read the open PDF](https://arxiv.org/pdf/2610.30942)
+- [Paper details, abstract and citation](https://davidhamlyn.com/papers/gateformer/)
+- [David Hamlyn's research](https://davidhamlyn.com/)
